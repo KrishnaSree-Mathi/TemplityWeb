@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Alumni</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon-16x16.png" size="22x22" type="image/png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 30px;
+      background-color: white;
+      
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+	
+ }
+ .row.content {
+    height: -20%;
+}
+        /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: -10px;
+	  margin-top:-10px;
+	  
+    }
+	.sidenav {
+       
+        padding: 15px;
+      }
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+	
+	* {box-sizing:border-box}
+body {font-family: Arial Rounded MT;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #666699;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: relative;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px 0 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+hr{
+ margin: 5px 10px;
+ border: 0;
+ border-top: 1px solid #ccc;
+ margin-bottom: 20px;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 50px) {
+  .text {font-size: 11px}
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+	padding-top: -100px;
+	padding-bottom: -100px;
+	height:auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.text-center {
+    text-align: center;
+}
+.col-sm-2 {
+    width: 100%;
+	height:100%;
+}
+@media (min-width: 768px)
+
+.col-sm-2 {
+    width: 16.6667%;
+}
+@media (min-width: 768px)
+{
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    float: left;
+}
+.col-sm-2{
+float: right;
+width:30%;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+	
+	div.container{
+ width:100%;
+ height: 900px;
+ margin:20px auto;
+ font-family: 'Raleway', sans-serif;
+}
+ 
+div.main{
+ width:100%;
+ height: 380px;
+ padding: 10px 50px 25px;
+ border: 2px solid gray;
+ border-radius: 15px;
+ font-family:'Times';
+ float:left;
+ margin-top:50px;
+}
+.logo{
+float:left;
+padding-left:10px;
+
+}
+.row{
+height:60%;
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 375px) {
+    .columns {
+        width: 50%;
+    }
+}
+@media (max-width: 320px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+	 .co{
+	 font-size:8px;
+	 font-family:Times New Roman;
+	 margin-left:0cm;
+	 }
+	 .co1{
+	 font-size:16px;
+	 margin-left:0cm;
+	 }
+	 .co2{
+	 font-size:18px;
+	 text-align:justify;
+	 }
+	 .head{
+	 font-size:24px;
+	 }
+	 .logo{
+	 width:10px;
+	 height:10px;
+	 }
+	 
+	 }
+
+@media screen and (max-width: 320px) {
+	 .co{
+	 font-size:8px;
+	 font-family:Times New Roman;
+	 margin-left:0cm;
+	 }
+	 .co1{
+	 font-size:16px;
+	 margin-left:0cm;
+	 }
+	 .co2{
+	 font-size:18px;
+	 text-align:justify;
+	 }
+	 .head{
+	 font-size:23px;
+	 }
+	 .logo{
+	 width:10px;
+	 height:10px;
+	 }
+	 
+	 }
+
+
+@media screen and (max-width: 375px) {
+	 .co{
+	 font-size:12px;
+	 font-family:Times New Roman;
+	 margin-left:0cm;
+	
+	 }
+	 .head{
+	 font-size:23px;
+	 }
+	 .co1{
+	 font-size:12px;
+	 margin-left:0cm;
+	 text-align:left;
+	 }
+	 .co2{
+	 font-size:16px;
+	 text-align:left;
+	 }
+	 
+	 .logo{
+	 width:10px;
+	 height:10px;
+	 }
+	 #demo{
+	 font-size:12px;
+	 }
+	 }
+	 
+	 }
+
+  </style>
+</head>
+<body>
+<div class="jumbotron">
+		<div class="logo">
+		<a href="index.html" target="_parent"><img src="logo.png" width="120px" height="120px"></a>
+	</div>
+	<div class="container-fluid text-center">
+    <h2 class="head">SIR C R REDDY COLLEGE OF ENIGNEERING<!--<marquee width=15% style="font-size:18px;color:red;text-align:right">DONATE BOOK</h2></marquee>     -->
+    <p><h2>ALUMNI</h2></p>
+  </div>
+  <!--<div class="logo text-right">
+		<a href="#" target="_parent"><marquee width=30% style="font-size:18px;color:red;text-align:right">DONATE BOOK</h2></marquee></a>
+	</div>-->
+</div>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#" target="_parent">Home</a></li>
+        <li><a href="about us.html" target="_parent">About</a></li>
+        <li><a href="directory.html" target="_parent">Directory</a></li>
+        <li><a href="association.html" target="_parent">Association</a></li>
+		<li><a href="form1.html" target="_parent">Alumni Registration</a></li>
+		<li><a href="gallery.html" target="_parent">Gallery</a></li>
+		<li><a href="contact.html" target="_parent">Contact Us</a></li>
+		
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="indexfgp.php" target="_parent"><span class="glyphicon glyphicon-log-in"></span> Admin</a></li>
+		<li><a href="developersframes.html" target="_parent">Developers</a></li>
+	  </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid text-center">    
+  <div class="row content" id="row">
+  
+    <div class="col-sm-8 text-center"> 
+      <h1>Welcome</h1>
+      <p>Sir C R Reddy College of Engineering is offering you "ALUMNI" Association by gathering all your details.</p>
+      <hr>
+      <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1</div>
+  <img src="7.jpg" style="width:80%">
+  <div class="text">T&P Department</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2</div>
+  <img src="1.jpg" style="width:80%">
+  <div class="text">Alumni Association</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3</div>
+  <img src="2.jpg" style="width:75%">
+  <div class="text">US Alumni get together</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4</div>
+  <img src="11.jpg" style="width:80%;height:50%">
+  <div class="text">US Alumni get together</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5</div>
+  <img src="3.jpg" style="width:80%">
+  <div class="text">college</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6</div>
+  <img src="4.jpg" style="width:80%">
+  <div class="text">Seminor by Alumni</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7</div>
+  <img src="5.jpg" style="width:80%">
+  <div class="text">Interaction with Alumni</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8</div>
+  <img src="6.jpg" style="width:80%">
+  <div class="text">college</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9</div>
+  <img src="10.jpg" style="width:80%">
+  <div class="text">Alumni Meet</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10</div>
+  <img src="8.jpg" style="width:80%">
+  <div class="text">Seminor Hall</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11</div>
+  <img src="9.jpg" style="width:80%">
+  <div class="text">Fun Time</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  
+</div>
+
+<br>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="container">
+	  <div class="main">
+		<h2>News and updates</h2><hr/>
+		<p style="font-family:Arial Rounded MT;font-size:16;color:red"><marquee direction = "up">New Alumni website of Sir C R Reddy College of Engineering has been launched. <br>
+		Visit the Alumni site and update your details.</p><br><br></marquee><hr/>
+	
+	
+	
+		<marquee direction = "left"><a id="demo" style="color:blue;font-size:16px;" onclick="myFunction()"><img src="news1.gif" width="60px" height="50px"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br><a href="#" style="color:red;font-size:24;">DONATE BOOK</a></marquee>
+		
+		</div></div>
+		<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "New Alumnni Website of Sir C R Reddy College of Engineering has been launched successfully";
+}
+</script></div>
+</div>
+</div>
+<footer class="container-fluid text-center"style="a:hover
+	{
+	color:white;
+	font-size:20px;
+	}
+	a{
+	color:white;
+	decoration:none;
+	}
+	img:hover{width:20px;}">
+  <center><a href="https://www.facebook.com/sircrrcoeofficial/" target="_blank"><img src="favi.png" ></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="login.html" target="_parent">Admin</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="developersframes.html" target="_parent">Developers</a></center>
+</footer>
+
+</body>
+</html>

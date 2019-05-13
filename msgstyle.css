@@ -1,0 +1,211 @@
+/* below line is used for online google font */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+*{
+  margin:0;
+  padding:0;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Open Sans Condensed', sans-serif;
+    /* fallback for old browsers */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-transition:.5s;
+  transition:.5s;
+}
+h1{
+ background-color:skyblue;
+ padding: 30px 35px;
+ margin: -10px -50px;
+ text-align:left;
+ border-radius: 10px 10px 0 0;
+}
+ 
+hr{
+ margin: 2px -10px;
+ border: 0;
+ border-top: 1px solid #ccc;
+ margin-bottom: 40px;
+}
+ 
+div.container{
+ width:50%;
+ height: 100%;
+ margin:65px auto;
+ font-family: 'Raleway', sans-serif;
+}
+ 
+div.main{
+ width:55%;
+ padding: 10px 50px 25px;
+ border: 2px solid gray;
+ border-radius: 10px;
+ font-family:'Times';
+ float:left;
+ margin-top:50px;
+}
+ 
+input[type=text],input[type=email]{
+ width: 90%;
+ height: 30px;
+ padding: 5px;
+ margin-bottom: 25px;
+ margin-top: 5px;
+ border: 2px solid #ccc;
+ color: #4f4f4f;
+ font-size: 14px;
+ border-radius: 10px;
+}
+textarea{
+ margin-bottom: 25px;
+ margin-top: 5px;
+ border: 2px solid #ccc;
+ color: #4f4f4f;
+ font-size: 14px;
+ border-radius: 10px;
+}
+
+label{
+ color: blue;
+ 
+padding:5px;
+ font-size: 16px;
+ 
+font-family:Times New Roman;
+}
+
+center{
+ font-size:22px;
+}
+
+.note{
+ color:red;
+}
+ 
+.valid{
+ color:green;
+}
+
+
+ 
+input[type=button]{
+ font-size: 14px;
+ background:yellow;
+ border: 1px solid #e5a900;
+ color: #4E4D4B;
+ font-weight: bold;
+ cursor: pointer;
+ width: 70%;
+ border-radius: 5px;
+ padding: 8px 0;
+ outline:none;
+}
+ 
+input[type=button]:hover{
+ background: pink;
+}
+.popup{
+  display:block;
+  width:750px;
+  height:700px;
+  background:#fff;
+  border-radius:5px;
+  margin:80px auto;
+  z-index:999;
+  overflow:hidden;
+  -webkit-transform:translateY(-300%);
+  transform:translateY(-300%);
+  -moz-box-shadow: 0px 0px 20px rgba(56,56,56,.2);
+-webkit-box-shadow: 0px 0px 20px rgba(56,56,56,.2);
+box-shadow: 0px 0px 20px rgba(56,56,56,.2);
+  text-align:center;
+  
+  font-size:1.5em;
+  position:relative;
+  -webkit-transition: all 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.popup h1{
+  
+  text-transform:capitalize;
+  font-weight:200;
+  font-size:1.1em;
+  position:relative;
+  left:-200%;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition-delay:900ms;
+  transition-delay:900ms;
+}
+
+
+.popup .close{
+  position:absolute;
+  top:20px;
+  right:15px;
+  font-size:.9em;
+  font-weight:lighter;
+  cursor:pointer;
+  
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.overlay{
+  overflow-x:hidden;
+  overflow-y:hidden;
+   -webkit-transition:all 3s ease-in-out;
+   transition:all 3s ease-in-out;
+}
+
+.overlay::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+   -webkit-transition:3s;
+   transition:3s ;
+}
+
+
+.btn{
+  position:absolute;
+  left:50%;
+  top:50%;
+  -webkit-transform:scale(1);
+  -ms-transform:scale(1);
+  transform:scale(1);
+  padding:15px 35px;
+  border:1px solid #24C6DC;
+  border-radius:50px;
+  background:transparent;
+  cursor:pointer;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:1.2em;
+  color:#fff;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.btn:focus{
+  outline:none;
+}
+
+
+
+
+.btn:hover{
+    -webkit-transform:scale(1.2);
+  ransform:scale(1.2);
+  background:#24C6DC;
+  -moz-box-shadow: 0px 0px 20px rgba(56,56,56,.2);
+-webkit-box-shadow: 0px 0px 20px rgba(56,56,56,.2);
+box-shadow: 0px 0px 20px rgba(56,56,56,.2);
+}
+
+

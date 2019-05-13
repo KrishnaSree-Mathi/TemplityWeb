@@ -1,0 +1,76 @@
+.container {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    color: #757575;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    padding: 30px;
+}
+h2 {
+    font-size:26px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.container p {
+	width : 100%;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+ @media screen and (max-width: 375px) {
+ p {
+    font-size:16px;
+}
+
+ }
+ @media screen and (max-width: 320px) {
+ p {
+    font-size:16px;
+}
+
+ }
+ @media screen and (max-width: 425px) {
+.regisFrm p {
+    font-size:16px;
+}
+
+ }
+ 
+.regisFrm  p {
+    font-size:18px;
+}
+.regisFrm input[type="text"], .regisFrm input[type="email"], .regisFrm input[type="password"] {
+    width: 100%;
+	border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+	font-size:16px;
+	outline: none;
+    color: blue;
+	border-radius:8px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.send-button {
+    text-align: center;
+    margin-top: 20px;
+}
+.send-button input[type="submit"] {
+    padding: 10px 0;
+    width: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1%;
+    outline: none;
+    color: #FFF;
+    background-color: #2196F3;
+    cursor: pointer;
+}
+.send-button input[type="submit"]:hover {
+    background-color: #055d54;
+}
+a.logout{float: right;}
+p.success{color:#34A853;}
+p.error{color:#EA4335;}

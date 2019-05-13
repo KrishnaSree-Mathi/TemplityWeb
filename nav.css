@@ -1,0 +1,33 @@
+
+ul {
+    list-style-type: none;
+    margin: 1cm;
+    padding: 0px;
+    font-size: 20px;
+    overflow: hidden;
+    background-color: #c4ffff;
+}
+
+li {
+    float: left;
+    font-size:20px;
+
+}
+
+li a {
+    display: block;
+    color:black;
+    text-align: center;
+    font-size:20px;
+    padding: 5px 30px;
+    text-decoration: none;
+}
+li a:hover{color: red;background-color: #d1e0e0;font-size:22px;}
+
+.active {
+background-color:lightgrey;
+}
+
+@media only screen and (max-width: 50px) {
+  .text {font-size: 11px}
+}

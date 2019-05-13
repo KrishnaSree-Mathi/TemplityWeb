@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration form</title>
+  <meta charset="utf-8">
+ 
+<link rel="icon" href="favicon-16x16.png" size="22x22" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+<link rel="stylesheet" href="regstyle.css">
+ 
+	<script>
+function validate()
+{
+	var a = document.myform.name.value;  
+	var b = document.myform.dob.value;
+	var c = document.myform.YOJ.value;
+	var d = document.myform.YOP.value;
+	var e = document.myform.reg.value;
+	/*var f = document.myform.Empname.value;  
+	var g = document.myform.designation.value;
+	var h = document.myform.EmpCountry.value;
+	var i = document.myform.EmpState.value;
+	var j = document.myform.EmpCity.value;*/
+	var k = document.myform.MobileNo.value;
+	var l = document.myform.EmailID.value;
+	var atpos = l.indexOf("@");
+    var dotpos = l.lastIndexOf(".");
+
+  
+if (a==null || a==""){  
+  alert("Name can't be blank"); 
+document.myform.name.focus();  
+  return false;  
+	}
+	if(!isNaN(a))
+  {
+  alert("Name must be characters only");
+	document.myform.name.select();
+  return false;
+  }
+  
+  if(isNaN(e))
+  {
+  alert("Registration Number must be digits only");
+  document.myform.reg.select();
+  return false;
+  }
+  
+	if(b==null || b==""){  
+  alert("Date of Birth must be filled with in the given format.");  
+  document.myform.dob.focus();
+  return false;  
+  }  
+  if(c==null || c=="")
+  {
+  alert("Year of Joining must be filled with in the given format.");  
+  document.myform.YOJ.focus();
+  return false;  
+  
+  }
+  if(d==null || d=="")
+  {
+  alert("Year of Passing must be filled with in the given format.");  
+  document.myform.YOP.focus();
+  return false;  
+  }
+	/*if(!isNaN(f))
+  {
+  alert(" Employee Name must be characters only");
+  document.myform.Empname.select();
+  return false;
+  }
+  if(!isNaN(g))
+  {
+  alert(" Designation must be characters only");
+  document.myform.designation.select();
+  return false;
+  }
+  if(!isNaN(h))
+  {
+  alert(" Country must be characters only");
+  document.myform.EmpCountry.select();
+  return false;
+  }
+  if(!isNaN(i))
+  {
+  alert(" State must be characters only");
+  document.myform.EmpState.select();
+  return false;
+  }
+  if(!isNaN(j))
+  {
+  alert("City must be characters only");
+  document.myform.EmpCity.select();
+  return false;
+  }*/
+  if(k==null || k=="")
+  {
+  alert("Mobile Number must be filled compulsory.");  
+  document.myform.MobileNo.focus();
+  return false;  
+  }
+  if(isNaN(k))
+  {
+  alert("Mobile Number must be digits only");
+  document.myform.MobileNo.select();
+  return false;
+  }
+  if((k.length != 10))
+  {
+  alert("Mobile Number must be 10 digits.");
+  document.myform.MobileNo.select();
+  return false;
+  }
+  if(l==null || l=="")
+  {
+  alert("Email Id must be filled in prescribed format.");  
+  document.myform.EmailID.focus();
+  return false;  
+  }
+  if (atpos<1 || dotpos<atpos+2 || dotpos+2>=l.length) {
+  alert("Not a valid e-mail address");
+  document.myform.EmailID.select();
+   return false;
+    }
+	else
+	{
+	return true;
+	}
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btn").style.display = "block";
+    } else {
+        document.getElementById("btn").style.display = "none";
+    }
+}
+
+
+ function validates()
+{
+	var na = document.form.name.value;  
+	var fo = document.form.question.value; 
+	var ph = document.form.phone.value;
+	var em = document.form.email.value;
+	var atpos1 = em.indexOf("@");
+    var dotpos1 = em.lastIndexOf(".");
+
+  
+if (na==null || na==""){  
+  alert("Name must be filled"); 
+document.form.name.focus();  
+  return false;  
+	}
+	if(!isNaN(na))
+  {
+  alert("Name must be characters only");
+	document.form.name.select();
+  return false;
+  }
+	if(fo==null || fo==""){  
+  alert("Yor comments must not be less than 20.");  
+  document.form.question.focus();
+  return false;  
+  }  
+  if(!isNaN(fo))
+  {
+  alert("Your answer must not be included any digits");
+	document.form.question.select();
+  return false;
+  }
+  
+  
+  if(ph==null || ph=="")
+  {
+  alert("Mobile Number must be filled compulsory.");  
+  document.form.phone.focus();
+  return false;  
+  }
+  if(isNaN(ph))
+  {
+  alert("Mobile Number must be digits only");
+  document.form.phone.select();
+  return false;
+  }
+  if((ph.length != 10))
+  {
+  alert("Mobile Number must be 10 digits.");
+  document.form.phone.select();
+  return false;
+  }
+  if(em==null || em=="")
+  {
+  alert("Email Id must be filled in prescribed format.");  
+  document.form.email.focus();
+  return false;  
+  }
+    if (atpos1<1 || dotpos1<atpos1+2 || dotpos1+2>=em.length) {
+        alert("Not a valid e-mail address");
+		document.form.email.select();
+        return false;
+    }
+
+	else
+	{
+	return true;
+	}
+
+
+}
+
+
+
+</script>
+
+  
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+     
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 1px;
+	  position: fixed;
+	  bottom:0;
+	  left:0;
+	  right:0px;
+	 
+    }
+    .col-sm-2{
+    width:30%;
+    
+    }
+	.logo{
+float:left;
+padding-left:10px;
+
+}
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+	a{
+	decoration:none;
+	color:red;
+	}
+  </style>
+</head>
+<body background="13.jpg">
+
+
+<a href="index.html" target="_parent"><button  class="button">Back</button></a>
+<div class="container-fluid text-center">    
+  <div class="row content">
+  
+    <div class="col-sm-8 text-left"> 
+	
+      <form action="form.php" method="POST" name="myform" onSubmit="return validate()">
+<div class="container">
+	  <div class="main">
+	  <center><h1><font color="#9966ff">ALUMNI <br>Registration Form</font><hr /></h1></center>
+<table cellspacing="10">
+<tr><td><label>Name:<br>[surname followed by name]
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label></td><td><input type="text" name="name"><label style="color:red">*</label></td></tr>
+
+<tr><td><label>Registration No:</label></td><td><input type="text" name="reg"></td></tr>
+<tr><td><label>Date of Birth:</label></td><td><input type="date" name="dob"><label style="color:red">*</label></td></tr>
+
+<tr><td><label>Academic Program:</label></td><td><select name="ACprogram">
+<option>B.tech/B.E</option>
+<option>M.tech</option>
+<option>MCA</option>
+<option>MBA</option>
+</select><label style="color:red">*</label></td></tr>
+
+<tr><td><label>Department:</label></td><td><select name="dept">
+<option>MECH</option>
+<option>CIVIL</option>
+<option>EEE</option>
+<option>ECE</option>
+<option>CSE</option>
+<option>IT</option>
+</select><label style="color:red">*</label></td></tr>
+
+<tr><td><label>Batch:</label></td><td><label>Year of joining:</label><br><select name="YOJ"><option>1989</option><option>1990</option><option>1991</option>
+<option>1992</option><option>1993</option><option>1994</option><option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option><option>2000</option>
+<option>2001</option><option>2002</option><option>2003</option><option>2004</option><option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option>
+<option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option></select><label style="color:red">*</label></td></tr>
+
+<tr><td></td><td><label>Year of passing:</label><br><select name="YOP"><option>1993</option><option>1994</option><option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option><option>2000</option>
+<option>2001</option><option>2002</option><option>2003</option><option>2004</option><option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option>
+<option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option><option>2018</option></select><label style="color:red">*</label></td></tr>
+
+<tr><td><label>Current Status:</label></td><td><input type="radio" name="currentstatus" value="Working"><label>Working</label><br>
+<input type="radio" name="currentstatus" value="Business"><label>Business</label><br>
+<input type="radio" name="currentstatus" value="Home Maker"><label>Home Maker<br>
+<input type="radio" name="currentstatus" value="Studying">Studying</label><br>
+<input type="radio" name="currentstatus" value="Other"><label>Other</label></td></tr>
+
+<tr><th><h2>Higher Studies:<br>(if any)</h2></th><td></td></tr>
+
+<tr><td><label>Program(PG):</label></td><td><input type="text" name="PG"></td></tr>
+
+<tr><td><label>Present Status:</label></td><td><select name="presentstatus" required>
+<option>--select--</option>
+<option>Completed</option>
+<option>Pursuing</option>
+</select></td></tr>
+
+<tr><td><label>University Name:</label></td><td><input type="text" name="universityname"></td></tr>
+
+<tr><td><label>Country:</label></td><td><input type="text" name="country"></td></tr>
+
+<tr><td><label>State:</label></td><td><input type="text" name="state"></td></tr>
+
+<tr><td><label>City:</label></td><td><input type="text" name="city"></td></tr>
+
+
+
+<tr><td><h2>Employement Details:</h2></td><td></td></tr>
+<tr><td><label>Present Employee Name:</label></td><td><input type="text" name="Empname" ></td></tr>
+<tr><td><label>Designation:</label></td><td><input type="text" name="designation"></td></tr>
+
+<tr><td><label>Work Location:</label></td><td><input type="text" name="Worklocation"></td></tr>
+
+<tr><td><label>Country:</label></td><td><input type="text" name="EmpCountry"></td></tr>
+
+<tr><td><label>State:</label></td><td><input type="text" name="EmpState"></td></tr>
+
+<tr><td><label>City:</label></td><td><input type="text" name="EmpCity"></td></tr>
+
+
+<tr><td><h2>Contact Details:</h2></td><td></td></tr>
+
+
+
+<tr><td><label>Mobile No:</label></td><td><input type="text" name="MobileNo"><label style="color:red">*</label></td></tr>
+<tr><td><label>Email ID:</label></td><td><input type="text" name="EmailID"><label style="color:red">*</label></td></tr>
+<tr><td><label>Linked in profile URL:</label></td><td><input type="text" name="URL"></td></tr>
+<tr><td><label>Address:</label></td><td><textarea rows="7" columns="25" name="Address"></textarea></td></tr>
+
+
+<tr><td><label>Special Achievements:(if any)</label></td><td><textarea rows="5" columns="25" name="Special"></textarea></td></tr>
+<tr><td><input type="submit" value="SUBMIT"></td><td><input type="RESET" value="RESET"></td></tr>
+
+
+
+
+</table> 
+	 
+	
+</form>
+</div>
+</div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+
+<div class="popup">
+		<h4><center>Leave the message</h4></center><hr/>
+ 
+		<form method="post" name="form" action="forum.php" onSubmit="return validates()">
+		<table>
+		<tr><td><label>Name</label></td><td>
+		  <input type="text" name="name" id="username"/><label style="color:red">*</label></td></tr>
+			<tr><td><label>EmailAddress</label></td><td>
+			<input type="email"  name="email" id="email" class="required"><label style="color:red">*</label></td></tr>
+			<tr><td><label>PhoneNumber</label></td><td>
+			<input type="text" name="phone" id="phone" class="required"><label style="color:red">*</label></td></tr>
+			<tr><td><label>Message</label></td><td>
+			<textarea type="text" name="question" id="question" rows="8" cols="24" class="required"></textarea><label style="color:red">*</label></td></tr>
+			<tr><td> 
+		<input type="submit" value="SUBMIT" id="submit"/>
+		</td></tr>
+		</table></form>
+	<span class="close">
+    <i class="fa fa-close"></i>
+  </span>
+</div>  
+		  </div>
+  </div>
+</div>
+<button class="btn" onClick="topFunction()">Message</button>
+<div class="circle"></div>
+<div class="circle"></div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script src="index2.js"></script>
+	  
+	  
+	  
+	  
+
+
+
+
+</body>
+</html>
